@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.kii.sample.hellothingif"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile ('com.kii:thing-if-sdk:0.11.1:library@aar') {
+        transitive=true
+    }
+    compile ('com.kii:cloud-sdk:2.4.9:library@aar') {
+        transitive=true
+    }
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.jakewharton:butterknife:8.1.0'
+    compile 'org.jdeferred:jdeferred-android-aar:1.2.4'
+}
+
+apply plugin: 'com.google.gms.google-services'
