@@ -1,6 +1,6 @@
 # Hello Thing-IF
 
-This is a shell project to help get started with the Thing-IF SDK. Visit the Samples and Tutorials section of the Kii Documentation site at http://docs.kii.com/en/samples/hello-thingif/ for the tutorial.
+This is a shell project to help get started with the Thing-IF SDK. Visit the Samples and Tutorials section of the Kii Documentation site.
 
 ## License
 
