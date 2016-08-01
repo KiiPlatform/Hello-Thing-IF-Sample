@@ -232,6 +232,7 @@ int main(int argc, char** argv)
     }
 
     /* prepare for the command handler */
+    memset(&command_handler_resource, 0x00, sizeof(command_handler_resource));
     command_handler_resource.buffer = command_handler_buff;
     command_handler_resource.buffer_size =
         sizeof(command_handler_buff) / sizeof(command_handler_buff[0]);
@@ -242,6 +243,7 @@ int main(int argc, char** argv)
     command_handler_resource.state_handler = state_handler;
 
     /* prepare for the state updater */
+    memset(&state_updater_resource, 0x00, sizeof(state_updater_resource));
     state_updater_resource.buffer = state_updater_buff;
     state_updater_resource.buffer_size =
         sizeof(state_updater_buff) / sizeof(state_updater_buff[0]);
