@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Hello Thing-IF</string>
+    <string name="action_settings">Settings</string>
+    <string name="progress_add_user">Adding the user...</string>
+    <string name="progress_onboard">Onboarding the thing...</string>
+    <string name="progress_send_command">Sending the command...</string>
+    <string name="progress_receive_state">Receiving the state...</string>
+    <string name="command_power_on">Power ON</string>
+    <string name="command_brightness_0">Brightness: 0</string>
+    <string name="command_send_command">Send Command</string>
+    <string name="command_text_power_on">Power: ON</string>
+    <string name="command_text_brightness_0">Brightness: 0</string>
+    <string name="command_text_motion_0">Motion: 0</string>
+    <string name="command_refresh_state">Refresh State</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_add_user">Add User</string>
+    <string name="login_vendorthingid">vendorThingID</string>
+    <string name="login_thingpassword">ThingPassword</string>
+    <string name="login_onboard">Onboard</string>
+</resources>
